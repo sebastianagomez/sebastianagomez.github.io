@@ -1,0 +1,33 @@
+/*CSS for large screen view*/
+
+@media (min-width: 60em) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .sec1 {
+      grid-column: 1;
+    }
+  
+    .sec2 {
+      grid-column: 2;
+    }
+    .sec3 {
+      grid-column: 3;
+    }
+  
+    h1 {
+      font-size: 3.5em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    .myname {
+      font-size: 2em;
+    }
+  
+    .intro {
+      grid-column: 1 / span 3;
+    }
+  }
