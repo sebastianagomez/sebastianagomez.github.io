@@ -1,0 +1,137 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	article:nth-child(3) {
+		grid-column: span 1;
+	}
+}
+
+footer {
+	font-size: 0.9em;
+	padding: 1.5rem;
+	text-align: center;
+	background-color: #808080;
+	color: white;
+	border: 3px solid #ccc;
+	border-radius: 1em; 
+  }
+  
+  .subscript {
+	font-size: 0.7em;
+	padding: 0.5rem;
+	text-align: center;
+  }
+
+  header,
+body {
+  margin: 1.25rem auto;
+  max-width: 1000px;
+  background-image: url(../img/marmol.jpg);
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  display: block;   
+  text-align: center;
+}
+
+section {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0f0e0f;
+  background-color: #808080;
+  border: 3px solid #ccc;
+  border-radius: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  font-family: "Nixie One", sans-serif;
+  text-align: center;
+  background-color: #808080;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+p {
+  font-family: "Raleway", serif;
+  color: white;
+  margin: 2em;
+  text-align: left;
+}
+
+.intro {
+  color: #000000;
+  text-align: center;
+  font-size: 22px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+.myname {
+  font-size: 1em;
+}
+
+footer {
+  font-size: 0.9em;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #808080;
+  color: white;
+  border: 3px solid #ccc;
+  border-radius: 1em; 
+}
+
+.subscript {
+  font-size: 0.7em;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+a {
+  color: #B0DAF1;
+  background-color: #808080;
+  display: inline-block;
+}
+
+a:visited {
+  color: #B0DAF1;
+}
+
+a:hover {
+  color: rgb(64, 60, 175);
+}
+
+footer {
+    margin-top: 30px;
+	background-color: #808080;
+	flex: 0 1 100%;
+	height: 2rem;
+}
+
+.container, p {
+	color: black;
+}
