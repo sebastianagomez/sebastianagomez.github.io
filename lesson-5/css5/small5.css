@@ -4,6 +4,14 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.banner {
+    height: 50px;
+    line-height: 50px;
+    background: #EC9A29;
+    text-align: center;
+    font-size: 12px;
+}
+
 nav button {
     margin: .2rem 2%;
     background-color: transparent;

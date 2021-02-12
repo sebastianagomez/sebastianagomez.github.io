@@ -1,6 +1,14 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
 
+    .banner {
+        height: 50px;
+        line-height: 50px;
+        background: #EC9A29;
+        text-align: center;
+        font-size: 18px;
+    }
+
     header img {
         width: 150px;
         height: auto;

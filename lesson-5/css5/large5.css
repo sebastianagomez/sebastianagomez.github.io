@@ -1,6 +1,14 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
 
+    .banner {
+        height: 50px;
+        line-height: 50px;
+        background: #EC9A29;
+        text-align: center;
+        font-size: 23px;
+    }
+
     nav {
         background-color: #536878;  
         display: flex;
@@ -212,5 +220,7 @@ footer {
 	padding: 0.5rem;
 	text-align: center;
   }
+
+
 
   
