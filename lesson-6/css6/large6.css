@@ -230,3 +230,7 @@ footer {
   main figure.myphoto img {
     width: 100%;
 }
+
+aside#announcement.banner.hide {
+    display: none;
+  }

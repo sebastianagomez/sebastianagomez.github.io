@@ -45,21 +45,17 @@ function toggleMenu(){
 document.getElementById("primaryNav").classList.toggle("hide");
 }
 
-function dateBanner() {
-  var d = new Date();
-  var n = d.getDay()
-  if(n === 5) {
-      var element = document.getElementById("announement")
-      element.classList.add("showBanner");
-      return;
-  }
-  else {
-      var element = document.getElementById("announement")
-      element.classList.add("closeBanner");
-      return;
+window.onload = function dateBanner() {
+   
+  
+  let d = new Date();
+  let q = d.getDay();
+
+  if (q != 5) {
+    document.getElementById("announcement").classList.toggle("hide");
   }
   
-}
+};
 
 WebFont.load({
   google: {
