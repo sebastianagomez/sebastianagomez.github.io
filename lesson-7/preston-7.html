@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>The Weather Site of Sebastian Gomez</title>
+        <meta name="description" content="Babyitscoldoutside">  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="img6/iconfinder_weather-05_1530388.png">
+        <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="css7/small7.css">
+        <link rel="stylesheet" href="css7/medium7.css">
+        <link rel="stylesheet" href="css7/large7.css">
+    </head>
+    <body>
+        <aside onload="dateBanner()" id="announcement" class="banner">
+            Saturday = Preston Pancakes in the Park!
+            9:00 a.m. Saturday at the city park pavilion.
+        </aside>
+    <header>
+        
+        <img src="img7/iconfinder_weather-05_1530388.png" alt="logo">
+        <h1>Baby it's cold outside?</h1>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="preston-7.html">Home</a></li>
+            <li><a href="#">Capital</a></li>
+            <li><a href="#">Villa Carlos Paz</a></li>
+            <li><a href="#">Monte Cristo</a></li> 
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+        <div class="box">
+            <h2 class="h2main">Cordoba</h2>
+            <div class="herodiv">
+                    <figure class="myphoto">
+                    <img class="img-principal" src="img7/wdd230_image_franklinOriginal (1).jpeg" alt="photo" sizes="50vw"
+                        srcset="img7/photo1.png 200w,
+                            img7/photo2.png 500w,
+                            img7/photo3.png 800w,">
+                    <section class="stats">
+                        <h2>Weather Summary</h2>
+                        <p>Humidity: 33%</p>
+                        <p>Wind Speed: <span id="speed">5</span> mph</p>
+                        <p>Temperature: <span id="tempF">76</span>°F</p>
+                        <p>WindChill: <span id="windchill">78.76</span>°F</p>
+                    </section>
+                    </figure>
+            </div>
+        </div>
+        <div class="box"> 
+            <h2 class="h2-fiveday">Five day Forecast</h2>
+            <div class="five-day">
+                <div class="fiveday-box">
+                    <i class='fas'><h4>Monday</h4>&#xf740;<p>16°</p></i>
+                    <i class='fas'><h4>Tuesday</h4>&#xf740;<p>17°</p></i>
+                    <i class='fas'><h4>Wednesday</h4>&#xf743;<p>22°</p></i>
+                    <i class='fas'><h4>Thursday</h4>&#xf6c4;<p>28°</p></i>
+                    <i class='fas'><h4>Friday</h4>&#xf185;<p>33°</p></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="grid-article">  
+                <h2 class="h2-article">Article Title</h2>
+        
+                <p class="p-article"> 
+                   Lipsum dolor, sit amet consectetur adipisicing elit. Esse iste officia sequi, corporis saepe ab illum quibusdam alias quis architecto laboriosam autem reiciendis nobis, beatae magnam accusantium? Alias, nihil fugit?
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quod modi harum quas quidem voluptas, sapiente, unde perspiciatis nobis, molestias eligendi rerum minus aperiam? Facilis veniam libero nulla neque accusantium?
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, harum. Expedita, natus. Quos provident illo beatae quis, reprehenderit nulla dolorum vero id deserunt vitae, cumque harum, ducimus perspiciatis? Perferendis, nostrum?
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est voluptas iusto facere possimus dolor fuga error corrupti odio? Ipsa incidunt nihil quos modi beatae deserunt soluta rem laborum ratione pariatur!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, maxime. Maiores id totam atque quisquam in? Aperiam repellat, consectetur reprehenderit vitae dignissimos temporibus, eveniet eius porro inventore rerum nobis perspiciatis!
+                </p>
+        
+                <img class="img-article" src="https://www.cordobaturismo.gov.ar/wp-content/uploads/2019/12/san-miguel-3.jpg" alt="image-article">
+            </div>
+        </div>
+
+        <footer>
+            
+            <div class="grid-google-footer">
+                <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9361.957449293803!2d-64.24851898295115!3d-31.360609865700038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb451c9bb0d%3A0x7cb273e39300ea11!2sTemplo%20de%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2sar!4v1612652301138!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="contactinfo">
+                    <h4>Contact Information</h4>
+                    <ul class="navlinks">
+                        <li> Address: Av. Pedro Simón Laplace 5637, Córdoba</li>
+                        <li> Phone: +54 11 7361 0666</li>
+                        <li> Email: babyitscoldoutside@itscold.com</li>
+                    </ul>
+                
+                    <div class="social-icons">
+                        <img class="icon1" src="img7/facebook.png"/>
+                        <img class="icon2" src="img7/instagram.png" />
+                        <img class="icon3" src="img7/youtube.png"/>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main> 
+    <footer>      
+        &copy; <span id="currentyear"></span> <a href="../lesson-1/index.html">Sebastian Gomez - WDD 230</a>     
+        | Cordoba, Argentina |
+        <a class="footlink" href="https://www.byui.edu/online">BYU-I Online Learning</a> | <span id="currentdate"></span><br />
+        <div class="subscript">Last Modified:
+        <span id="lastModified"></span></div>
+        <script src="js7/script7.js"></script>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    </body>
+</html>
