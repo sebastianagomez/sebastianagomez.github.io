@@ -1,6 +1,8 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
 
+    /* ----- BANNER TOP ----- */
+
     .banner {
         height: 50px;
         line-height: 50px;
@@ -8,6 +10,26 @@
         text-align: center;
         font-size: 23px;
     }
+    
+    aside#announcement.banner.hide {
+    display: none;
+    }
+
+      /* ----- HEADER ----- */
+
+    header {
+        background-color: #808080;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+     h1, h2, p {
+        margin: 0;
+    }
+
+      /* ----- NAV ----- */
 
     nav {
         background-color: #536878;  
@@ -38,118 +60,52 @@
         padding: .6rem 1rem;
     }
 
-    .clearfix {
-        font-size: 25px;
-    }
-    header img {
-        width: 200px;
-        height: auto;
-    }
+    /* ----- MAIN ----- */
 
-    .h2main {
-        text-align: center;
-        font-size: 60px;
-        text-transform: uppercase;
-        margin-bottom: 40px;
-    }
-
-    header {
-        background-color: #808080;
-    }
-
-    header h1 {
-        font-size: 40px;
-    }
-
-    .herodiv {
-        margin: 10px auto;
-        position: relative;
-    }
-     h1, h2, p {
-        margin: 0;
-    }
-
-    .h2-fiveday {
-        font-size: 50px;
-        text-align: center;
-    }
-    .stats {
-	    position: absolute;
-    	top: 100px;
-	    right: 150px;
-    	background: radial-gradient(#eee, #4567aa);
-        border: 3px solid #ccc;
-        border-radius: 1em;
-	    padding: 3rem;
-	    box-shadow: 0 0 30px #111;
-	    opacity: .8;
-    }
-
-    .img-principal {
-        border: 3px solid #ccc;
-	    border-radius: 1em; 
-        width: 100%;
-        height: 700px;
-    }
-
-    .stats h2 {
-        font-size: 30px;
-        margin-bottom: 30px;
-        text-shadow: 2px 2px 5px black;
-    }
-
-    .stats p {
-        font-size: 30px;;
-    }
-
-    .five-day {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .fiveday-box{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin-left: auto;
-        margin-right: auto;
-     }
-
-    .fas {
-        font-size:40px;
-        padding: 0.5rem; 
-    }
-
-    .fas p {
+    .h2-gallery {
         margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
-    .grid-article {
+    .grid-gallery {
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-gap: 1em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2px;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        
     }
 
-    .h2-article {
-        font-size: 50px;
-        grid-column: 1/7;
-        grid-row: 1/2;
-        text-align: left;
+    .gallery-item {
+        padding: 10px 10px 20px 10px;
+        border: 2px solid #BFBFBF;
+        background-color: white;
+        border-radius: 1em;
+        box-shadow: 10px 10px 5px #aaaaaa;
+    }
+    
+    figure img {
+        grid-column: auto;
+        width: 300px;
+        height: 300px;
+        padding: 0px;
+        align-items: center;
+        justify-items: center;
+        border: 3px solid #ccc;
+	    border-radius: 1em;
     }
 
-    .p-article {
-        grid-column: 1/5;
-        grid-row: 2/4;
-        font-size: 22px;
+    figure img:hover {
+        box-shadow: 1px 1px 10px black;
     }
 
-    .img-article {
-        grid-column: 5/8;
-        grid-row: 2/4;
-        width: 100%;
-        height: 400px;
-    }
+
+
+
+
+    /* ----- FOOTER PAGE ----- */
 
     .grid-google-footer {
         display: grid;
@@ -180,11 +136,6 @@
         font-size: 40px;
     }
 
-    .navlinks li {
-        font-size: 17px;
-        list-style:none;
-    }
-
     .social-icons {
         display: flex;
     }
@@ -203,7 +154,9 @@
         margin: 10px;
         padding: 20px;
     }
-} /*end large */
+} 
+
+    /* ----- FOOTER BYU ----- */
 
 footer {
 	font-size: 0.9em;
@@ -221,16 +174,4 @@ footer {
 	text-align: center;
   }
 
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  main figure.myphoto img {
-    width: 100%;
-}
-
-aside#announcement.banner.hide {
-    display: none;
-  }
+  
