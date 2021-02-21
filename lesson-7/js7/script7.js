@@ -57,26 +57,6 @@ window.onload = function dateBanner() {
   
 };
 
-WebFont.load({
-  google: {
-    families: [
-       'Hachi'
-    ]
-  }
-});
-
-// WindChill
-
-let temp = parseFloat(document.querySelector('#tempF').textContent);
-let wspeed = parseFloat(document.querySelector('#speed').textContent);
-document.querySelector('#windchill').textContent = windChill(temp, wspeed);;
-
-function windChill(tempF, speed) {
-
-    let winch = 35.74 + 0.6215 * tempF - 35.75 * (Math.pow(speed, 0.16)) + 0.4275 * tempF * (Math.pow(speed, 0.16));
-    return winch.toFixed(2);
-}
-
 const images = document.querySelectorAll("[data-src]");
 
 function preloadImage(img) {
@@ -86,16 +66,16 @@ function preloadImage(img) {
   }
 
   img.src = src;
-  img.removeAttribute('data-src');
+  img.removeAttribute("data-src");
 }
 
 const imgOptions = {
   threshold: 1,
-  rootMargin: "0px 0px 10px 0px",
+  rootMargin: "0px 0px 200px 0px",
 };
 
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     } else {
@@ -105,6 +85,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
   });
 }, imgOptions);
 
-images.forEach(image => {
+images.forEach((image) => {
   imgObserver.observe(image);
 });
+
