@@ -62,9 +62,25 @@
 
     /* ----- MAIN ----- */
 
-    form label.sbs {
-        padding: .4rem 0;
-    }
+    /* ------ CARDS ------ */
+
+    div.town_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+        padding-bottom: 0;
+        }
+      
+      section.home_sect {
+        display: block;
+      }
+      
+      article#index_article {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      }
+
 
     /* ----- FOOTER PAGE ----- */
 

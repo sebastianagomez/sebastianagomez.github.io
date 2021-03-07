@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>The Weather Site of Sebastian Gomez</title>
+        <meta name="description" content="Babyitscoldoutside">  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="img9/iconfinder_weather-05_1530388.png">
+        <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="css9/small9.css">
+        <link rel="stylesheet" href="css9/medium9.css">
+        <link rel="stylesheet" href="css9/large9.css">
+    </head>
+    <body>
+        <aside onload="dateBanner()" id="announcement" class="banner">
+            Saturday = Preston Pancakes in the Park!
+            9:00 a.m. Saturday at the city park pavilion.
+        </aside>
+    <header>
+        
+        <img src="img9/iconfinder_weather-05_1530388.png" alt="logo">
+        <h1>Baby it's cold outside?</h1>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="/lesson-9/index9.html">Home</a></li>
+            <li><a href="#">Capital</a></li>
+            <li><a href="#">Villa Carlos Paz</a></li>
+            <li><a href="#">Monte Cristo</a></li>
+            <li><a href="../lesson-7/gallery-7.html">Gallery</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+
+        <div class="town_div"></div>
+        
+    </div>
+
+        <footer>
+            
+            <div class="grid-google-footer">
+                <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9361.957449293803!2d-64.24851898295115!3d-31.360609865700038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb451c9bb0d%3A0x7cb273e39300ea11!2sTemplo%20de%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2sar!4v1612652301138!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="contactinfo">
+                    <h4>Contact Information</h4>
+                    <ul class="navlinks">
+                        <li> Address: Av. Pedro Simón Laplace 5637, Córdoba</li>
+                        <li> Phone: +54 11 7361 0666</li>
+                        <li> Email: babyitscoldoutside@itscold.com</li>
+                    </ul>
+                
+                    <div class="social-icons">
+                        <img class="icon1" src="img9/facebook.png"/>
+                        <img class="icon2" src="img9/instagram.png" />
+                        <img class="icon3" src="img9/youtube.png"/>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main> 
+    <footer>      
+        &copy; <span id="currentyear"></span> <a href="../lesson-1/index.html">Sebastian Gomez - WDD 230</a>     
+        | Cordoba, Argentina |
+        <a class="footlink" href="https://www.byui.edu/online">BYU-I Online Learning</a> | <span id="currentdate"></span><br />
+        <div class="subscript">Last Modified:
+        <span id="lastModified"></span></div>    
+    </footer>
+    <script src="js9/script9.js"></script>
+    </body>
+</html>
