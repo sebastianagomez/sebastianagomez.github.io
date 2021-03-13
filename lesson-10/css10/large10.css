@@ -1,0 +1,154 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    /* ----- BANNER TOP ----- */
+
+    .banner {
+        height: 50px;
+        line-height: 50px;
+        background: #EC9A29;
+        text-align: center;
+        font-size: 23px;
+    }
+    
+    aside#announcement.banner.hide {
+    display: none;
+    }
+
+      /* ----- HEADER ----- */
+
+    header {
+        background-color: #808080;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+     h1, h2, p {
+        margin: 0;
+    }
+
+      /* ----- NAV ----- */
+
+    nav {
+        background-color: #536878;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+    }
+
+    /* ----- MAIN ----- */
+
+    /* ------ CARDS ------ */
+
+    div.town_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+        padding-bottom: 0;
+        }
+      
+      section.home_sect {
+        display: block;
+      }
+      
+      article#index_article {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      }
+
+
+    /* ----- FOOTER PAGE ----- */
+
+    .grid-google-footer {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 1em;
+    }
+
+    .gmap {
+        grid-column: 1/5;
+        grid-row: 1/2;
+        margin-left: auto;
+        margin-right: auto;
+        width:400px; 
+        height:350px;
+        border: 3px solid #ccc;
+	    border-radius: 1em;
+    }
+
+    .contactinfo {
+        grid-column: 4/8;
+        grid-row: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .contactinfo h4 {
+        font-size: 40px;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .icon1 {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .icon2 {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .icon3 {
+        margin: 10px;
+        padding: 20px;
+    }
+} 
+
+    /* ----- FOOTER BYU ----- */
+
+footer {
+	font-size: 0.9em;
+	padding: 1.5rem;
+	text-align: center;
+	background-color: #808080;
+	color: white;
+	border: 3px solid #ccc;
+	border-radius: 1em; 
+  }
+  
+  .subscript {
+	font-size: 0.7em;
+	padding: 0.5rem;
+	text-align: center;
+  }
+
+  
