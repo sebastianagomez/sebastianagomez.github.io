@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>The Weather Site of Sebastian Gomez</title>
+        <meta name="description" content="Babyitscoldoutside">  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="img11/iconfinder_weather-05_1530388.png">
+        <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="/lesson-7/css7/small7.css">
+        <link rel="stylesheet" href="/lesson-7/css7/medium7.css">
+        <link rel="stylesheet" href="/lesson-7/css7/large7.css">
+    </head>
+    <body>
+        <aside onload="dateBanner()" id="announcement" class="banner">
+            Saturday = Preston Pancakes in the Park!
+            9:00 a.m. Saturday at the city park pavilion.
+        </aside>
+    <header>
+        <img src="/lesson-7/img7/iconfinder_weather-05_1530388.png" alt="logo">
+        <h1>Baby it's cold outside?</h1>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaspring.html">Soda Springs</a></li>
+            <li><a href="fish.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li> 
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+        
+    <div class="h2-gallery">
+        <h1>Image Gallery</h1>
+    </div>
+    <div class="grid-gallery">
+
+        <figure class="gallery-item">
+            <img src="/lesson-7/imglazy/placeholder.jpg" data-src="/lesson-7/img7/img1.jpg" alt="image1" />
+            <h3>The Walk center</h3>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="/lesson-7/imglazy/placeholder.jpg" data-src="/lesson-7/img7/img2.jpg" alt="image2" />
+            <h3>The City</h3>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="/lesson-7/imglazy/placeholder.jpg" data-src="/lesson-7/img7/img3.jpg" alt="image3" />
+            <h3>The Sierras</h3>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="/lesson-7/imglazy/placeholder.jpg" data-src="/lesson-7/img7/img4.jpg" alt="image4" />
+            <h3>The Mountains</h3>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="/lesson-7/imglazy/placeholder.jpg" data-src="/lesson-7/img7/img5.jpg" alt="image5" />
+            <h3>The Catedral</h3>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="/lesson-7/imglazy/placeholder.jpg" data-src="/lesson-7/img7/img6.jpg" alt="image6" />
+            <h3>Hourses</h3>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="/lesson-7/imglazy/placeholder.jpg" data-src="/lesson-7/img7/img7.jpg" alt="image7" />
+            <h3>The View</h3>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="/lesson-7/imglazy/placeholder.jpg" data-src="/lesson-7/img7/img8.jpg" alt="image8" />
+            <h3>Departments</h3>
+        </figure>
+
+        <figure class="gallery-item">
+            <img src="/lesson-7/imglazy/placeholder.jpg" data-src="/lesson-7/img7/img9.jpg" alt="image9" />
+            <h3>The Sea</h3>
+        </figure>
+
+    </div>
+
+        <footer>
+            
+            <div class="grid-google-footer">
+                <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9361.957449293803!2d-64.24851898295115!3d-31.360609865700038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb451c9bb0d%3A0x7cb273e39300ea11!2sTemplo%20de%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2sar!4v1612652301138!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="contactinfo">
+                    <h4>Contact Information</h4>
+                    <ul class="navlinks">
+                        <li> Address: Av. Pedro Simón Laplace 5637, Idaho</li>
+                        <li> Phone: +54 11 7361 0666</li>
+                        <li> Email: babyitscoldoutside@itscold.com</li>
+                    </ul>
+                
+                    <div class="social-icons">
+                        <img class="icon1" src="/lesson-7/img7/facebook.png"/>
+                        <img class="icon2" src="/lesson-7/img7/instagram.png" />
+                        <img class="icon3" src="/lesson-7/img7/youtube.png"/>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main> 
+    <footer>      
+        &copy; <span id="currentyear"></span> <a href="../lesson-1/index.html">Sebastian Gomez - WDD 230</a>     
+        | Cordoba, Argentina |
+        <a class="footlink" href="https://www.byui.edu/online">BYU-I Online Learning</a> | <span id="currentdate"></span><br />
+        <div class="subscript">Last Modified:
+        <span id="lastModified"></span></div>    
+    </footer>
+    <script src="/lesson-7/js7/script7.js"></script>
+    </body>
+</html>
