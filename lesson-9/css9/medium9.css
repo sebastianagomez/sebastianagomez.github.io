@@ -38,6 +38,34 @@
     
     /* ----- MAIN ----- */
 
+    .herodiv {
+        margin: 10px auto;
+        position: relative;
+    }
+
+    .img-principal {
+        border: 3px solid #ccc;
+	    border-radius: 1em; 
+        width: 100%;
+        height: 400px;
+    }
+    .home-article-h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    .points-article {
+        background: #e0e0e0;
+        padding: 20px;
+        margin-top: 5px;
+        display:block;
+        margin:auto;
+        width: 80%;
+        border: 3px solid #ccc;
+	    border-radius: 1em; 
+    }
+
     section.home_sect {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -52,6 +80,27 @@
           grid-column: 2/3;
           grid-row: 1;
       }
+
+      section .cards {
+        margin: .5rem auto;
+        border: 1px solid #bbb;
+        background-color: #eee;
+        display: flex;
+        flex-wrap: wrap;
+        
+   }
+    section {
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+        margin: .5rem auto;
+        width: 70%;
+       
+        
+  }
+    section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 
     /* ----- FOOTER PAGE ----- */
 

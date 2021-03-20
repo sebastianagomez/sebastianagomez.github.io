@@ -62,9 +62,60 @@
 
     /* ----- MAIN ----- */
 
+    .img-principal {
+        border: 3px solid #ccc;
+	    border-radius: 1em; 
+        width: 80%;
+        height: 500px;
+        display:block;
+        margin:auto;
+    }
+
+    .home-article-h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    .points-article {
+        background: #e0e0e0;
+        padding: 20px;
+        margin-top: 5px;
+        display:block;
+        margin:auto;
+        width: 80%;
+        border: 3px solid #ccc;
+	    border-radius: 1em; 
+    }
     /* ------ CARDS ------ */
 
-    div.town_div {
+    div.cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 20px;
+        text-align: center;
+        margin: 20px auto;
+        margin-right: auto;
+        margin-left:auto ;
+      }
+      section {
+          display: grid;
+          grid-template-columns: 1fr;
+          border: 3px solid #ccc;
+	      border-radius: 1em; 
+          text-align: center;
+          width: 80%;
+          
+      }
+      .cards img {
+          align-content: center;
+      }
+      section img {
+        height: 160px;
+      }
+    
+    /* div.town_div {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1.5rem;
@@ -79,7 +130,7 @@
         margin-top: 0;
         margin-bottom: 4rem;
         margin-top: 2rem;
-      }
+      } */
 
 
     /* ----- FOOTER PAGE ----- */
