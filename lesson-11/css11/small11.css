@@ -245,12 +245,16 @@ table, th, td {
    margin-right: auto;
 }
 .current-events {
+    
+}
+
+.events {	
     display: block;
     background: #e0e0e0;
-    padding: 20px;
-    margin-top: 5px;
     border-left: 5px solid #536878;
     margin:auto;
+    margin-left: 30%;
+    margin-right:30%;
 }
 /*----- FOOTER PAGE -----*/
 
