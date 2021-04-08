@@ -1,0 +1,66 @@
+/* CSS for tablet view*/
+
+@media (min-width: 37.5em) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2em;
+    }
+  
+    .sec1 {
+      grid-column: 1;
+    }
+  
+    .sec2 {
+      grid-column: 2;
+    }
+    .sec3 {
+      grid-column: span 2;
+    }
+  
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    .myname {
+      font-size: 1.75em;
+    }
+  
+    .intro {
+      grid-column: 1 / span 2;
+    }
+  }
+
+
+
+  @media only screen and (min-width: 37.5em) {
+
+    nav ul { 
+    display: flex; 
+    }
+nav ul li { 
+    flex: 1 1 100%;
+    }
+
+
+
+nav a {
+font-size: 1rem;
+}
+main {
+grid-template-columns: 1fr 1fr;
+}
+article:nth-child(3) {
+grid-column: span 2;
+}
+main picture {
+display: block;
+}
+main picture img {
+width: 100%;
+height: auto;
+border: 1px solid #bbb;
+}
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>Gomez Hotel</title>
+    <meta name="description" content="The E-Commerce Site of Sebastian Gomez">
+    <link rel="stylesheet" href="css14/small14.css">
+    <link rel="stylesheet" href="css14/medium14.css">
+    <link rel="stylesheet" href="css14/large14.css">
+</head>
+
+<body>
+
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <img class="logo" alt="Gomez Hotel Logo" src="/lesson-14/img14/Logo GH.png" />
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li class="active"><a href="reservenow.html">Reserve Now</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1505820996465-b8bf9918eb60?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fHJvb21zJTIwaG90ZWx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Principal Img">
+        </div>
+
+        <main>
+
+            <h1 class="h1-hotels">Explore the World</h1>
+            
+            <form method="get" action="thanks.html">
+    
+                <fieldset> <legend>User Information</legend>
+                    <label class="top">Full Name* <input type="text" name="fname" required></label>
+                    <label class="top">Title <input type="text" name="ftitle"></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="15 0555 7321" required></label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Check-In<input type="date" name="completeDate"> </label>
+                    <label class="top">Check-Out<input type="date" name="completeDate"> </label>
+                    <label class="top">Hotel 
+                        <select name="subject">
+                            <option value="">Please Select &#9662;</option>
+                        <option value="sebshotel">Seb's Hotel</option>
+                        <option value="arishotel">Ari's Hotel</option>
+                        <option value="nadiashotel">Nadia's Hotel</option>
+                        </select>
+                    </label>
+                    <div>Adults:</div>
+                    <label class="flexly" for="rating">
+                        <input type="range" name="rating" id="rating" value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">1</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+                    <div>Kids:</div>
+                    <label class="flexly" for="rating">
+                        <input type="range" name="rating" id="ratingkids" value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">1</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+                    <div>Rooms:</div>
+                    <label class="flexly" for="rating">
+                        <input type="range" name="rating" id="ratingrooms" value="1" min="1" max="5" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">1</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                  
+            
+                </fieldset>
+
+                <fieldset> <legend>Business Information</legend>
+                    <label class="top">Business Name* <input type="text" name="bname" required></label>
+                    <label class="top">Business Email <input type="email" name="bemail" placeholder="example@gmail.com" required></label>
+                    <label class="top">Business Website <input type="url" name="bwebsite"></label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div class="top">Comments:</div>
+                      <textarea id="area" name="comment" rows="4" cols="50"></textarea>
+                </fieldset>
+            
+                <input type="submit" value="Send" class="submitBtn">
+            
+            </form>
+
+            <footer>
+                <div class="grid-google-footer">
+                    <iframe class="gmap"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.8326311363257!2d-58.457820447952585!3d-34.56202979612483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f96221158b%3A0x456e0b1978684450!2sMinifletes%20vicente!5e0!3m2!1ses!2sar!4v1617851554757!5m2!1ses!2sar"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="contactinfo">
+                    <h4>Contact Information</h4>
+                    <ul class="navlinks">
+                        <li> Address: Av Juramento 3003, Buenos Aires</li>
+                        <li> Phone: +54 11 7361 0666</li>
+                        <li> Email: gomezhotels@itscold.com</li>
+                    </ul>
+
+                        <div class="social-icons">
+                            <img class="icon1" src="/lesson-9/img9/facebook.png" />
+                            <img class="icon2" src="/lesson-9/img9/instagram.png" />
+                            <img class="icon3" src="/lesson-9/img9/youtube.png" />
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <footer>
+            &copy; <span id="currentyear"></span> <a href="../lesson-1/index.html">Sebastian Gomez - WDD 230</a>
+            | Buenos Aires, Argentina |
+            <a class="footlink" href="https://www.byui.edu/online">BYU-I Online Learning</a> | <span
+                id="currentdate"></span><br />
+            <div class="subscript">Last Modified:
+                <span id="lastModified"></span>
+            </div>
+        </footer>
+        <script src="/lesson-9/js9/script9.js"></script>
+        <script src="/lesson-14/js14/reservenow.js"></script>
+
+</body>
+
+</html>
